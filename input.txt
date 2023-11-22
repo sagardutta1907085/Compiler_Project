@@ -1,0 +1,109 @@
+ints mains fbs fbe
+sbs
+
+//DECLARATIONS
+ints var_a assign_f 10 mod 3; 
+ints var_b assign_f 2 power 4; 
+ints var_c assign_f 10 add 3; 
+ints var_d assign_f 10 sub 3; 
+ints var_e assign_f 10 multi 3; 
+ints var_f assign_f 10 div 2; 
+
+//PRINTNG AND FETCHING
+show_str fbs "Value of mod in a: " fbe;
+show_var fbs var_a fbe;
+show_line fbs fbe;
+
+show_str fbs "Value of power in b: " fbe;
+show_var fbs var_b fbe;
+show_line fbs fbe;
+
+show_str fbs "Value of addition in c: " fbe;
+show_var fbs var_c fbe;
+show_line fbs fbe;
+
+show_str fbs "Value of subtraction in d: " fbe;
+show_var fbs var_d fbe;
+show_line fbs fbe;
+
+show_str fbs "Value of multiplication in e: " fbe;
+show_var fbs var_e fbe;
+show_line fbs fbe;
+
+show_str fbs "Value ofdivision in f: " fbe;
+show_var fbs var_f fbe;
+show_line fbs fbe;
+
+//CONDITIONAL IF STATEMENT
+
+if_f fbs 4 greater_than 5 fbe
+sbs
+	show_str fbs "Greater than 5" fbe;
+sbe
+again_if_f fbs 4 equal_to 3 fbe
+sbs
+	show_str fbs "Equals to 4" fbe;
+sbe
+again_if_f fbs 3 not_equal_to 4 fbe
+sbs
+	show_str fbs "Not equals to 3" fbe;
+sbe
+else_f
+sbs
+	show_str fbs "Not exactly known" fbe;
+sbe
+
+show_line fbs fbe;
+
+//CONDITIONAL SWTICH STATEMENT
+
+switch_f fbs 5 fbe 
+sbs
+	1 : sbs show_str fbs if_f fbs 4 greater_than 5 fbe
+sbs
+	show_str fbs "Greater than 5" fbe;
+sbe fbe; sbe
+	2 : 
+	sbs 
+		show_str fbs "case 2" fbe; 
+		show_line fbs fbe;
+	sbe
+	default_f : 
+	sbs 
+		show_str fbs "default" fbe; 
+		show_line fbs fbe;
+	sbe
+sbe
+
+
+//FOR LOOP
+
+for_loop fbs var_a To 5 inc_by 1 fbe
+sbs	
+	show_str fbs "In For loop" fbe;
+sbe
+
+var_a assign_f 1;
+
+//WHILE LOOP INCREASING FORMAT
+while fbs var_a Less 4 fbe
+sbs
+	show_str fbs ": In increasing while loop" fbe;
+	show_line fbs fbe;
+sbe
+//WHILE LOOP DECREASING FORMAT
+while fbs var_a Great 1 fbe
+sbs
+	show_str fbs ": In decreasing while loop" fbe;
+	show_line fbs fbe;
+sbe
+
+show_line fbs fbe;
+
+//INPUT
+show_str fbs "Give integer input: " fbe;
+scan fbs var_a fbe;
+show_str fbs "Value Taken from you: " fbe;
+show_var fbs var_a fbe;
+	
+sbe

@@ -1,0 +1,4 @@
+flex main.l
+bison -d main.y
+gcc lex.y.c main.tab.c -o a
+a

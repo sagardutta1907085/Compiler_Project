@@ -1,0 +1,23 @@
+Header declared
+Header declared
+This is a single line comment
+New variable declared.
+New variable declared.
+New variable declared.
+New variable declared.
+New variable declared.
+New variable declared.
+This is a single line comment
+Value of mod in a: 1
+Value of power in b: 16
+Value of addition in c: 13
+Value of subtraction in d: 7
+Value of multiplication in e: 30
+Value ofdivision in f: 5
+This is a single line comment
+"Not equals to 3
+Else if block executed
+
+This is a multiple line comment
+syntax error
+ 64
